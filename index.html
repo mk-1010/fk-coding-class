@@ -65,7 +65,7 @@
                 This is showing the line break from the last line<br/>
                 And now we are using a second line break</p>
             <!-- C.2-1 -->
-            <!-- <input type="submit" value="Click this button to add a verse!" onclick="addVerse()"> -->
+            <input type="submit" value="Click this button to add a verse!" onclick="addVerse()">
         </header>
     </div>
 </section>
@@ -99,20 +99,23 @@
 
 <script>
     // H.2-1: Create a global variable to hold the number of verses we have on our page
+  var number_of_verses = 0;
 
     function addVerse() {
         // H.2-2: Increment the number of verses we have on our page don't change the two lines below here
+        number_of_verses = number_of_verses + 1;
         printTheNumberOfVerses();
         printOddOrEven();
     }
 
     function printTheNumberOfVerses() {
         // H.2-3: Change log statement should print the total number of verses
-        console.log("This should print the number of verses there are")
+        console.log(number_of_verses)
+    console.log(number_of_verses)
     }
-
     function printOddOrEven() {
         // H.2-4: log statement should print "even" or "odd"
         console.log("This should print even or odd depending on how many verses there are")
     }
+  
 </script>
